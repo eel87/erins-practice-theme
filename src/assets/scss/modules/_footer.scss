@@ -2,11 +2,16 @@
   @include xy-grid-container;
   border-top: 1px solid $medium-gray;
   margin-top: rem-calc(60);
+  //add footer color
+  background-color: blue;
+  min-width: 100%;
 }
 
 .footer-grid {
   @include xy-grid;
   padding: rem-calc(30) 0;
+  margin: 0;
+  
 
   section {
     @include xy-cell();

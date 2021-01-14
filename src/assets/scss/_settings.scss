@@ -63,7 +63,6 @@
 
 @import 'util/util';
 @import 'global/colors';
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Permanent+Marker&display=swap');
 
 // 1. Global
 // ---------
@@ -84,8 +83,8 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: -apple-system, BlinkMacSystemFont, 'Patrick Hand', cursive;
+$body-font-color: $black !default;
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -120,7 +119,7 @@ $breakpoint-classes: (small medium large);
 // 3. The Grid
 // -----------
 
-$grid-row-width: $global-width;
+$grid-row-width: $global-width !default;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
@@ -133,11 +132,11 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Permanent Marker', cursive;
+$header-font-family: $body-font-family !default;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: $medium-gray;
+$header-color: inherit !default; //inherit from?
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
@@ -156,8 +155,8 @@ $header-styles: (
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
-  ),
-);
+  )
+) !default;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
@@ -328,7 +327,7 @@ $callout-link-tint: 30%;
 // 14. Card
 // --------
 
-$card-background: $white;
+$card-background: $white !default;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
 $card-border: 1px solid $light-gray;

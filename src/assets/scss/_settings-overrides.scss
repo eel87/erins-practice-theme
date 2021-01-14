@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Permanent+Marker&display=swap');
+
+//font style changes
+$body-font-family: -apple-system, BlinkMacSystemFont, 'Patrick Hand', cursive;
+$header-font-family: 'Permanent Marker', cursive;
+$header-color: blue;
+$body-font-color: #6c4d9e;
+
+$header-styles: (
+  small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+  large: (
+    'h1': ('font-size': 58),
+    'h2': ('font-size': 54),
+    'h3': ('font-size': 50),
+    'h4': ('font-size': 40),
+    'h5': ('font-size': 35),
+    'h6': ('font-size': 30),
+  )
+);
+
+//hover in red
+$anchor-color-hover: red;
+

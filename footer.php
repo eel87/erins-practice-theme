@@ -9,11 +9,15 @@
  */
 ?>
 
-<footer class="footer-container">
-	<div class="footer-grid">
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
+<div data-sticky-container>
+	<div data-sticky data-stick-to="bottom" data-options="marginBottom:0;">
+		<footer class="footer-container">
+			<div class="footer-grid">
+				<?php dynamic_sidebar( 'footer-widgets' ); ?>
+			</div>
+		</footer>
 	</div>
-</footer>
+</div>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	</div><!-- Close off-canvas content -->

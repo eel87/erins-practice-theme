@@ -22,8 +22,8 @@
 		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
-	<header class="site-header" role="banner">
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+	<header class="site-header" role="banner" data-sticky-container>
+		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?> data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
 			<div class="title-bar-left">
 				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 				<span class="site-mobile-title title-bar-title">
@@ -46,5 +46,4 @@
 				<?php endif; ?>
 			</div>
 		</nav>
-
 	</header>

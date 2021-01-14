@@ -6,6 +6,11 @@
   @include xy-grid();
   margin-top: 1rem;
 
+  @include breakpoint(large) {
+    max-width: rem-calc(600);
+    margin: auto;
+  }
+
   @include breakpoint(medium) {
     margin-top: 3rem;
   }
