@@ -6,18 +6,34 @@
 // Make sure that the WP admin-bar does not overlap Foundation components
 body.admin-bar {
   // Offset sticky top bar
-  &.f-topbar-fixed {
-    .sticky.fixed {
-      margin-top: rem-calc(32);
-    }
+  .sticky.is-stuck {
+      margin-top: rem-calc(46) !important;
+      @include breakpoint( large ) {
+        margin-top: rem-calc(32) !important;
+      }
   }
   // Offset mobile off-canvas menu
   &.offcanvas {
+    
     .off-canvas.is-open {
-      top: rem-calc(46);
+      padding-top: rem-calc(46);
       @include breakpoint(783) {
-        top: rem-calc(32);
+        padding-top: rem-calc(32);
       }
     }
+    
   }
+  
+  #wpadminbar {
+    top: 0;
+  }
+  
+  &.off-canvas-open {
+    
+    #wpadminbar {
+      top: rem-calc(-46);
+    }
+    
+  }
+  
 }
